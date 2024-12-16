@@ -1,0 +1,130 @@
+html {
+  font-family: 'Amiri';
+  cursor: crosshair;
+  background-color: #f2f3f4;
+}
+body {
+  margin-bottom: 10px;
+}
+body a {
+  color: #88AD71;
+}
+body a:hover {
+  color: #000000;
+  text-shadow: -15px 10px 3px rgba(0, 0, 0, 0.646);
+  transition: 1s;
+}
+
+/* Bottom Menu */
+#menubar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#menubarlogo{
+  float: left;
+  padding: 5px 16px;
+  cursor: crosshair;
+}
+.menubarcontent a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor:crosshair;
+}
+.menubarcontent p {
+  display: inline-block;
+  color: #000;
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  cursor:crosshair;
+}
+.menubarcontent .icon {
+  display: none;
+}
+
+#menubarclef a {
+    float:right;
+    padding: 5px 16px
+}
+#logo a {
+  padding: 0
+}
+
+
+/*Main body*/
+.mainbody {
+  text-align: center;
+}
+#frontpagetall {
+  text-align: center;
+}
+#frontpagetall img {
+  height: calc(100vh - 100px);
+}
+.text {
+  width:700px;
+  text-align: center;
+}
+.container {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top:40px;
+}
+.activetab {
+  text-shadow: -15px 15px 3px rgb(100, 100, 100, 0.2);
+}
+.button {
+	padding-right: 5px;
+	padding-left: 5px;
+	width:88px;
+	height:31px;
+}
+.gallery {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery img {
+  max-height:calc(100vh - 100px);
+  width: 50%;
+  margin: 10px 0px 10px;
+}
+.figure {
+  position: relative;
+  max-width: 100%;
+  cursor: crosshair;
+}
+.figure img.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: .9s;
+  cursor: crosshair;
+}
+.figure:hover img.image-hover {
+  opacity: 1;
+}
